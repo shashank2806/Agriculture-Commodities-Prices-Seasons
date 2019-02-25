@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Analysis of APMC data for state of Maharastra
 
-You can use the [editor on GitHub](https://github.com/shashank2806/Agriculture-Commodities-Prices-Seasons/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+AIM: To understand trends in APMC (Agricultural produce market committee)/mandi price & quantity arrival data for different commodities in Maharashtra.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Objective
 
-### Markdown
+* Test and filter outliers.
+* Understand price fluctuations accounting the seasonal effect
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  * Detect seasonality type (multiplicative or additive) for each cluster of APMC and commodities
 
-```markdown
-Syntax highlighted code block
+  * De-seasonalise prices for each commodity and APMC according to the detected seasonality type
 
-# Header 1
-## Header 2
-### Header 3
+* Compare prices in APMC/Mandi with MSP(Minimum Support Price)- raw and deseasonalised
 
-- Bulleted
-- List
+* Flag set of APMC/mandis and commodities with highest price fluctuation across different commodities in each relevant season, and year.
 
-1. Numbered
-2. List
+Progress:
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shashank2806/Agriculture-Commodities-Prices-Seasons/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* I have cleaned data by removing redundency from names.
+* I have filtered outliers from data and saved the filtered files.
+* I am looking of seasonality in data, but still I am unable to find effective method to find find seasonality in each cluster of APMC and Commmodity.
